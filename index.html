@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meriendahan sa Amianan</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<style>
+    
+    .hero {
+        background-image: url('cover.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        color: #fff;
+        min-height: 100vh;
+    }
+
+    /* Hover Effect for Cards */
+    .card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        cursor: pointer;
+    }
+
+    .card:hover {
+        transform: scale(1.05);
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Mobile Specific Hover Effect */
+    .card.active {
+        transform: scale(1.05);
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Media Queries for Small Devices */
+    @media (max-width: 768px) {
+        .hero h1 {
+            font-size: 2rem;
+        }
+        .hero p {
+            font-size: 1rem;
+        }
+
+        /* Mobile-specific adjustments for cards */
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .card-img-top {
+            height: 180px;
+        }
+    }
+
+    .navbar-brand {
+    font-size: 1.5rem; /* Default font size */
+}
+
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1.2rem; /* Adjust font size for smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-brand {
+        font-size: 1rem; /* Further adjust font size for very small screens */
+    }
+}
+
+</style>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Meriendahan sa Amianan</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+
+    <!-- Hero Section -->
+    <section class="hero d-flex align-items-center text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="display-4">Meriendahan sa Amianan</h1>
+                    <p class="lead">We care for your taste!</p>
+                    <a href="menu.html" class="btn btn-warning btn-lg">Order Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Menu Section -->
+    <section class="popular-menu py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Our Popular Menu</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card shadow" onclick="toggleCard(this)">
+                        <img src="https://scontent.fcrk1-3.fna.fbcdn.net/v/t39.30808-6/464863622_399904136521863_5523896305593688154_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHR9eXD-HPk3EODQpjodDnuYB2mzeQkgc5gHabN5CSBzlnWfalKfignveiS4VeQXR38JZQv7O2Q7keayGIV_kpb&_nc_ohc=pm0C3DOiWuEQ7kNvgG0WRY0&_nc_zt=23&_nc_ht=scontent.fcrk1-3.fna&_nc_gid=A0UfQUtZ5ZCQrZYbaP6O-8e&oh=00_AYCVJCNofHygXLk0n1ukO0bCeaSQC95MfYXCxC90oHe3Jg&oe=674DCCBA" class="card-img-top" alt="Special Empanada">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Special Empanada</h5>
+                            <p class="card-text">Our signature Ilocos-style empanada made with love.</p>
+                            <a href="menu.html" class="btn btn-warning">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow" onclick="toggleCard(this)">
+                        <img src="https://scontent.fcrk1-2.fna.fbcdn.net/v/t39.30808-6/463220559_389756887536588_9013962976908202396_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeEYzzPanhviFLOUQOLEmyzYq8Fu6zdIOPmrwW7rN0g4-fDOEUbcMiMlqIRlQlr4WIH5jTmslgbPu1nG913XduO9&_nc_ohc=uLGuEpy0YJ8Q7kNvgHbneGQ&_nc_zt=23&_nc_ht=scontent.fcrk1-2.fna&_nc_gid=AyLQ7F9XqiJwrj5QiwcQAsb&oh=00_AYDlYcGH7RvKcYXoMS1_qGbgY8Ihg-WpQAZ8H6NG9y8eWQ&oe=674DD431" class="card-img-top" alt="Mami">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Classic Mami</h5>
+                            <p class="card-text">A hearty bowl of Mami to warm your soul.</p>
+                            <a href="menu.html" class="btn btn-warning">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow" onclick="toggleCard(this)">
+                        <img src="https://scontent.fcrk1-5.fna.fbcdn.net/v/t39.30808-6/414491152_206025512576394_8219373609684680484_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=f727a1&_nc_eui2=AeGs1CntW2ocHtIKbHKFACAFn8q7Q13pU8SfyrtDXelTxL50PTFsQDsOB6XLBFZcnjxsS_X7CFb1a2miWMiWkG-_&_nc_ohc=Wa7AxCznVP8Q7kNvgENDgWp&_nc_zt=23&_nc_ht=scontent.fcrk1-5.fna&_nc_gid=AMhhKPrY1ETqBNqHZh5Wnvp&oh=00_AYBfYTrByBltLNUmIctnK_ehpKrETYvHzzTOLXDKEMW6SQ&oe=674CFE60" class="card-img-top" alt="Bibingka">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Bibingka</h5>
+                            <p class="card-text">A sweet and soft delicacy perfect for any occasion.</p>
+                            <a href="menu.html" class="btn btn-warning">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Testimonials Section -->
+    <section class="testimonials py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">What Our Customers Say</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <blockquote class="blockquote text-center">
+                        <p>"The empanada is the best I've ever had! Will definitely come back."</p>
+                        <footer class="blockquote-footer">Kier Justine</footer>
+                    </blockquote>
+                </div>
+                <div class="col-md-4">
+                    <blockquote class="blockquote text-center">
+                        <p>"Amazing service and the food tastes incredible. Highly recommended!"</p>
+                        <footer class="blockquote-footer">Jheneel Klein</footer>
+                    </blockquote>
+                </div>
+                <div class="col-md-4">
+                    <blockquote class="blockquote text-center">
+                        <p>"A great place for merienda with family and friends. Love the Mami!"</p>
+                        <footer class="blockquote-footer">Paul Jerick</footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Meriendahan sa Amianan. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JavaScript and Bootstrap Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+    <script>
+        // Toggle hover effect on mobile when card is clicked/tapped
+        function toggleCard(card) {
+            card.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<style>
+    body {
+    padding-top: 30px; /* Adjust this value to match the height of your navbar */
+}
+
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28255, 255, 255, 0.75%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    }
+
+    .navbar-toggler {
+        border: 1px solid rgba(255, 255, 255, 0.5); /* Optional: visible border for contrast */
+    }
+
+    .cart-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .cart-item button {
+        margin-left: 10px;
+    }
+
+    .navbar-brand {
+    font-size: 1.5rem; /* Default font size */
+}
+
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1.2rem; /* Adjust font size for smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-brand {
+        font-size: 1rem; /* Further adjust font size for very small screens */
+    }
+}
+</style>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Meriendahan sa Amianan</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    
+    <!-- Menu Section -->
+    <section class="menu py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Our Menu</h2>
+            <div class="row">
+                <!-- Food Items -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="empanada.jpg" class="card-img-top" alt="Special Empanada">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Special Empanada</h5>
+                            <p class="card-text">₱50.00</p>
+                            <button class="btn btn-warning add-to-cart" data-name="Special Empanada" data-price="50.00">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="palabok.jpg" class="card-img-top" alt="Palabok">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Palabok</h5>
+                            <p class="card-text">₱25.00</p>
+                            <button class="btn btn-warning add-to-cart" data-name="Palabok" data-price="25.00">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="carbonara.jpg" class="card-img-top" alt="Carbonara">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Carbonara</h5>
+                            <p class="card-text">₱30.00</p>
+                            <button class="btn btn-warning add-to-cart" data-name="Carbonara" data-price="30.00">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="freshlumpia.jpg" class="card-img-top" alt="Fresh Lumpia">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Fresh Lumpia</h5>
+                            <p class="card-text">₱30.00</p>
+                            <button class="btn btn-warning add-to-cart" data-name="Fresh Lumpia" data-price="30.00">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="shnaghai.jpg" class="card-img-top" alt="Shanghai">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Shanghai</h5>
+                            <p class="card-text">₱20.00</p>
+                            <button class="btn btn-warning add-to-cart" data-name="Shanghai" data-price="20.00">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="mami.jpg" class="card-img-top" alt="Classic Mami">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Classic Mami</h5>
+                            <p class="card-text">₱40.00</p>
+                            <button class="btn btn-warning add-to-cart" data-name="Classic Mami" data-price="40.00">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="nachos.jpg" class="card-img-top" alt="Nachos">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Nachos</h5>
+                            <p class="card-text">₱25.00</p>
+                            <button class="btn btn-warning add-to-cart" data-name="Nachos" data-price="25.00">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- More Food Items -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="puto1.jpg" class="card-img-top" alt="Poto">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Puto Cheese</h5>
+                            <p class="card-text">₱10.00</p>
+                            <button class="btn btn-warning add-to-cart" data-name="Poto" data-price="10.00">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="siomai.jpg" class="card-img-top" alt="Siomai">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Siomai</h5>
+                            <p class="card-text">₱25.00</p>
+                            <button class="btn btn-warning add-to-cart" data-name="Siomai" data-price="25.00">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="hotdog.jpg" class="card-img-top" alt="Hotdog">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Hotdog</h5>
+                            <p class="card-text">₱15.00</p>
+                            <button class="btn btn-warning add-to-cart" data-name="Hotdog" data-price="15.00">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="barbecue.jpg" class="card-img-top" alt="Barbeque">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Barbeque</h5>
+                            <p class="card-text">₱20.00</p>
+                            <button class="btn btn-warning add-to-cart" data-name="Barbeque" data-price="20.00">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="miki.jpg" class="card-img-top" alt="Miki">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Miki</h5>
+                            <p class="card-text">₱25.00</p>
+                            <button class="btn btn-warning add-to-cart" data-name="Miki" data-price="25.00">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Drinks Menu Section -->
+<section class="drinks py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-4">Our Drinks</h2>
+        <div class="row">
+            <!-- Drink Items -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="green apple.jpg" class="card-img-top" alt="Red Tea">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Green Apple Fruit Tea</h5>
+                        <p class="card-text">₱25.00</p>
+                        <button class="btn btn-warning add-to-cart" data-name="Red Tea" data-price="20.00">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="milktea.jpg" class="card-img-top" alt="Milk Tea">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Milk Tea</h5>
+                        <p class="card-text">₱30.00</p>
+                        <button class="btn btn-warning add-to-cart" data-name="Milk Tea" data-price="30.00">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="blueberry.jpg" class="card-img-top" alt="Matcha">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Blueberry Fruit Tea</h5>
+                        <p class="card-text">₱40.00</p>
+                        <button class="btn btn-warning add-to-cart" data-name="Matcha" data-price="25.00">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="coca cola.jpg" class="card-img-top" alt="Coca-cola">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Coca-cola</h5>
+                        <p class="card-text">₱15.00</p>
+                        <button class="btn btn-warning add-to-cart" data-name="Coca-cola" data-price="15.00">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="mtdew.jpg" class="card-img-top" alt="Mountain Dew">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Mountain Dew</h5>
+                        <p class="card-text">₱15.00</p>
+                        <button class="btn btn-warning add-to-cart" data-name="Mountain Dew" data-price="15.00">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="royal.jpg" class="card-img-top" alt="Royal">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Royal</h5>
+                        <p class="card-text">₱15.00</p>
+                        <button class="btn btn-warning add-to-cart" data-name="Royal" data-price="15.00">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+        <!-- Footer -->
+        <footer class="bg-dark text-white py-4">
+            <div class="container text-center">
+                <p>&copy; 2024 Meriendahan sa Amianan. All Rights Reserved.</p>
+            </div>
+        </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script>
+        // Add to Cart functionality
+        const addToCartButtons = document.querySelectorAll('.add-to-cart');
+        addToCartButtons.forEach(button => {
+            button.addEventListener('click', function () {
+                const itemName = this.getAttribute('data-name');
+                const itemPrice = this.getAttribute('data-price');
+                
+                // Create item object
+                const item = {
+                    name: itemName,
+                    price: parseFloat(itemPrice),
+                    quantity: 1
+                };
+
+                // Retrieve existing cart from localStorage
+                let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+                // Check if item already exists in cart
+                const existingItemIndex = cart.findIndex(i => i.name === itemName);
+                if (existingItemIndex !== -1) {
+                    cart[existingItemIndex].quantity += 1; // Increase quantity
+                } else {
+                    cart.push(item); // Add new item
+                }
+
+                // Save cart back to localStorage
+                localStorage.setItem('cart', JSON.stringify(cart));
+                alert(itemName + ' added to cart!');
+            });
+        });
+    </script>
+</body>
+</html>
